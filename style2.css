@@ -1,0 +1,68 @@
+body {
+    
+    background-image: url('img/wallpaper2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+h1 {
+    font-family: KaiTi, "楷体";
+    text-align: center;
+    color: #9e9d9d;
+
+}
+
+h6 {
+
+    text-align: right;
+    color: #c7c5c5;
+
+}
+
+
+ /* 菜单样式 */
+ #menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #789fa0;
+    width: 150px;
+    color: #302929;
+    font-weight: bold;
+    
+  }
+
+  #menu li {
+    position: relative;
+  }
+
+  #menu > li {
+    float: left;
+    width: 150px;
+  }
+
+  #menu ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+  }
+
+  #menu li:hover > ul {
+    display: block;
+  }
+
+  #menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #dbd4d4;
+    text-decoration: none;
+  }
+
+  #menu a:hover {
+    background-color: #333;
+    color: #FFF;
+  }
+
+ 
