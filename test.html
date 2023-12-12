@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Windows XP 风格的多层级联菜单</title>
+    <title>Windows XP 风格的主页</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
     <script src="script.js"></script>
 </head>
@@ -15,40 +15,53 @@
     <h6 id="time">2023/12/12 星期二 11:03</h6>
 
 
-    <h1>我的主页</h1>
+    <h1>我的主页  test</h1>
 
     <ul id="menu">
+
         <li><a href="#">软件</a>
             <ul>
-                <li><a href="https://gitee.com/wxhzhwxhzh/idm" target="_blank">IDM</a></li>
+                <li><a class="url" href="https://gitee.com/wxhzhwxhzh/idm" >IDM</a></li>
+                <li><a class="url" href="https://1b9a4e13.ghelper.vip/">Ghelper</a></li>
+                <li><a class="url" href="https://www.ghxi.com/">果核剥壳</a></li>
+                <li><a class="url" href="https://chat.jinshutuan.com/#/chat/1702367283160">AIChatOS</a></li>
+                
+            </ul>
+        </li>
 
-                <li><a href="#">子菜单项 1-2</a></li>
-                <li><a href="#">子菜单项 1-3</a></li>
+        <li><a href="#">文档</a>
+            <ul>
+                <li><a class="url" href="https://www.kdocs.cn/" >WPS在线文档</a></li>
+
+                
             </ul>
         </li>
 
         <li><a href="#">视频</a>
             <ul>
                 <li>
-                    <a class="url" href="https://dianyi.ng/"><img class="emoji" src="ico/dianying.png" width="14"
-                            height="14">电影先生</a>
+                    <a class="url" href="https://dianyi.ng/"><img class="emoji" src="ico/dianying.png" >电影先生</a>
                 </li>
                 <li>
-                    <a class="url" href="https://www.iyf.tv/"> <img class="emoji" src="ico/iyf.ico" width="14"
-                            height="14">爱壹帆</a>
+                    <a class="url" href="https://www.iyf.tv/"> <img class="emoji" src="ico/iyf.ico" width="14">爱壹帆</a>
                 </li>
                 <li>
-                    <a class="url" href="https://dianyi.ng/"><img class="emoji" src="ico/dianying.png" width="14"
-                            height="14">电影先生</a>
+                    <a class="url" href="https://www.douyin.com/"><img class="emoji" src="ico/douyin.ico">抖音</a>
+                </li>
+                <li>
+                    <a class="url" href="https://www.huya.com/"><img class="emoji" src="ico/huya.ico">虎牙</a>
+                </li>
+                <li>
+                    <a class="url" href="https://www.douyu.com/"><img class="emoji" src="ico/douyu.ico">斗鱼</a>
                 </li>
 
             </ul>
         </li>
 
-        <li><a href="#">菜单项 3</a>
+        <li><a href="#">菜单</a>
             <ul>
-                <li><a href="#">子菜单项 3-1</a></li>
-                <li><a href="#">子菜单项 3-2</a></li>
+                <li><a href="/test.html">beta</a></li>
+                <li><a href="#" id="colorChanger">改变背景色</a></li>
                 <li><a href="#">子菜单项 3-3</a>
                     <ul>
                         <li><a href="#">子菜单项 2-2-1</a></li>
@@ -82,6 +95,14 @@
         urlLinks.forEach(function (link) {
             link.setAttribute('target', '_blank');
         });
+      //改变背景色
+        var colorChanger = document.getElementById('colorChanger');
+        colorChanger.addEventListener('click', function () {
+            document.body.style.backgroundColor = 'lightgreen';
+        });
+
+
+
     </script>
 
 
