@@ -24,17 +24,32 @@ h6 {
     position: relative;
     display: inline-block;
     margin: 10px;
+    color: #ddd;
+    font-weight: bold;
 }
 
 .menu button {
     display: block;
     width: 100px;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     border: none;
     text-align: center;
     padding: 10px;
     margin-bottom: 5px;
+    color: #ddd;
+    font-weight: bold;
+
+    background-color: transparent; /* 设置按钮背景色为透明 */
+    border: none; /* 移除按钮边框 */
+    cursor: pointer; /* 鼠标悬停时显示手型指示 */
 }
+.menu button:hover {
+    /* border: 1px solid black; 鼠标悬停时显示黑色边框 */
+    background-color: #5c5b5b;
+    
+  }
+
+
 
 /* 子菜单样式 */
 .submenu {
