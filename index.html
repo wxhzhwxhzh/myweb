@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .menu {
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+    }
+    
+    .menu button {
+      display: block;
+      width: 100px;
+      background-color: #f4f4f4;
+      border: none;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      font-size: small;
+    }
+    
+    .menu:hover .submenu {
+      display: block;
+    }
+    
+    .submenu a {
+      display: block;
+      color: #333;
+      padding: 10px;
+      text-decoration: none;
+    }
+    
+    .submenu a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu">
+  <button>软件</button>
+  <div class="submenu">
+    <a href="#">WPS</a>
+    <a href="#">PS</a>
+    <a href="#">rar压缩软件</a>
+  </div>
+</div>
+
+<div class="menu">
+  <button>菜单2</button>
+  <div class="submenu">
+    <a href="#">子菜单2-1</a>
+    <a href="#">子菜单2-2</a>
+    <a href="#">子菜单2-3</a>
+  </div>
+</div>
+
+<div class="menu">
+  <button>菜单3</button>
+  <div class="submenu">
+    <a href="#">子菜单3-1</a>
+    <a href="#">子菜单3-2</a>
+    <a href="#">子菜单3-3</a>
+  </div>
+</div>
+
+</body>
+</html>
